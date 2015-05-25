@@ -1,0 +1,29 @@
+/* line 1, ../src/css/style.sass */
+.outer {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+/* line 7, ../src/css/style.sass */
+.outer .middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 11, ../src/css/style.sass */
+.outer .middle .inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  text-align: center;
+}
+/* line 17, ../src/css/style.sass */
+.outer .middle .inner .button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}

@@ -20,4 +20,9 @@ WORD_GRID = [
   ['creepy','sphincter','balloon']
 ]
 
+generatePhrase = ->
+  words = []
+  for i in [0..2]
+    words[i] = WORD_GRID[Math.floor Math.random() * WORD_GRID.length][i]
 
+  return "#{words[0]} #{words[1]} #{words[2]}"
