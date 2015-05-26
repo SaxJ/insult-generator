@@ -7,13 +7,19 @@
     <div class="outer">
       <div class="middle">
         <div class="inner">
-          <h1>Ultimate Insult Generator</h1>
-          <div class="button">
+          <div class="loading" id="loading">
+            Loading...
+          </div>
+          <div class="button hidden" id="insultButton">
             Insult Me!
           </div>
+          <div id="insult"></div>
         </div>
       </div>
     </div>
+    <video id="video" class="invisible">
+      <source src="assets/reaction.mp4" type="video/mp4" />
+    </video>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

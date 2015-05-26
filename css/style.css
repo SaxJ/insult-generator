@@ -1,23 +1,275 @@
-/* line 1, ../src/css/style.sass */
+@-webkit-keyframes fadeIn {
+  /* line 2, ../src/css/style.sass */
+  from {
+    opacity: 0;
+  }
+
+  /* line 4, ../src/css/style.sass */
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 8, ../src/css/style.sass */
+  from {
+    opacity: 0;
+  }
+
+  /* line 10, ../src/css/style.sass */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 14, ../src/css/style.sass */
+  from {
+    opacity: 0;
+  }
+
+  /* line 16, ../src/css/style.sass */
+  to {
+    opacity: 1;
+  }
+}
+
+/* =================== */
+/* line 21, ../src/css/style.sass */
+.element-animation {
+  animation: animationFrames linear 1s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 50%;
+  -webkit-animation: animationFrames linear 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 100% 50%;
+  -moz-animation: animationFrames linear 1s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 100% 50%;
+  -o-animation: animationFrames linear 1s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 100% 50%;
+  -ms-animation: animationFrames linear 1s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 100% 50%;
+}
+
+@keyframes animationFrames {
+  /* line 40, ../src/css/style.sass */
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 43, ../src/css/style.sass */
+  15% {
+    transform: translate(-25px, 0px) rotate(-5deg);
+  }
+
+  /* line 46, ../src/css/style.sass */
+  30% {
+    transform: translate(20px, 0px) rotate(3deg);
+  }
+
+  /* line 49, ../src/css/style.sass */
+  45% {
+    transform: translate(-15px, 0px) rotate(-3deg);
+  }
+
+  /* line 52, ../src/css/style.sass */
+  60% {
+    transform: translate(10px, 0px) rotate(2deg);
+  }
+
+  /* line 55, ../src/css/style.sass */
+  75% {
+    transform: translate(-5px, 0px) rotate(-1deg);
+  }
+
+  /* line 58, ../src/css/style.sass */
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@-moz-keyframes animationFrames {
+  /* line 64, ../src/css/style.sass */
+  0% {
+    -moz-transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 67, ../src/css/style.sass */
+  15% {
+    -moz-transform: translate(-25px, 0px) rotate(-5deg);
+  }
+
+  /* line 70, ../src/css/style.sass */
+  30% {
+    -moz-transform: translate(20px, 0px) rotate(3deg);
+  }
+
+  /* line 73, ../src/css/style.sass */
+  45% {
+    -moz-transform: translate(-15px, 0px) rotate(-3deg);
+  }
+
+  /* line 76, ../src/css/style.sass */
+  60% {
+    -moz-transform: translate(10px, 0px) rotate(2deg);
+  }
+
+  /* line 79, ../src/css/style.sass */
+  75% {
+    -moz-transform: translate(-5px, 0px) rotate(-1deg);
+  }
+
+  /* line 82, ../src/css/style.sass */
+  100% {
+    -moz-transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  /* line 88, ../src/css/style.sass */
+  0% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 91, ../src/css/style.sass */
+  15% {
+    -webkit-transform: translate(-25px, 0px) rotate(-5deg);
+  }
+
+  /* line 94, ../src/css/style.sass */
+  30% {
+    -webkit-transform: translate(20px, 0px) rotate(3deg);
+  }
+
+  /* line 97, ../src/css/style.sass */
+  45% {
+    -webkit-transform: translate(-15px, 0px) rotate(-3deg);
+  }
+
+  /* line 100, ../src/css/style.sass */
+  60% {
+    -webkit-transform: translate(10px, 0px) rotate(2deg);
+  }
+
+  /* line 103, ../src/css/style.sass */
+  75% {
+    -webkit-transform: translate(-5px, 0px) rotate(-1deg);
+  }
+
+  /* line 106, ../src/css/style.sass */
+  100% {
+    -webkit-transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@-o-keyframes animationFrames {
+  /* line 112, ../src/css/style.sass */
+  0% {
+    -o-transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 115, ../src/css/style.sass */
+  15% {
+    -o-transform: translate(-25px, 0px) rotate(-5deg);
+  }
+
+  /* line 118, ../src/css/style.sass */
+  30% {
+    -o-transform: translate(20px, 0px) rotate(3deg);
+  }
+
+  /* line 121, ../src/css/style.sass */
+  45% {
+    -o-transform: translate(-15px, 0px) rotate(-3deg);
+  }
+
+  /* line 124, ../src/css/style.sass */
+  60% {
+    -o-transform: translate(10px, 0px) rotate(2deg);
+  }
+
+  /* line 127, ../src/css/style.sass */
+  75% {
+    -o-transform: translate(-5px, 0px) rotate(-1deg);
+  }
+
+  /* line 130, ../src/css/style.sass */
+  100% {
+    -o-transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+@-ms-keyframes animationFrames {
+  /* line 136, ../src/css/style.sass */
+  0% {
+    -ms-transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  /* line 139, ../src/css/style.sass */
+  15% {
+    -ms-transform: translate(-25px, 0px) rotate(-5deg);
+  }
+
+  /* line 142, ../src/css/style.sass */
+  30% {
+    -ms-transform: translate(20px, 0px) rotate(3deg);
+  }
+
+  /* line 145, ../src/css/style.sass */
+  45% {
+    -ms-transform: translate(-15px, 0px) rotate(-3deg);
+  }
+
+  /* line 148, ../src/css/style.sass */
+  60% {
+    -ms-transform: translate(10px, 0px) rotate(2deg);
+  }
+
+  /* line 151, ../src/css/style.sass */
+  75% {
+    -ms-transform: translate(-5px, 0px) rotate(-1deg);
+  }
+
+  /* line 154, ../src/css/style.sass */
+  100% {
+    -ms-transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+/* =================== */
+/* line 161, ../src/css/style.sass */
+.hidden {
+  visibility: collapse;
+}
+
+/* line 164, ../src/css/style.sass */
+.invisible {
+  opacity: 0;
+}
+
+/* line 167, ../src/css/style.sass */
 .outer {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
-/* line 7, ../src/css/style.sass */
+/* line 173, ../src/css/style.sass */
 .outer .middle {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 11, ../src/css/style.sass */
+/* line 177, ../src/css/style.sass */
 .outer .middle .inner {
   margin-left: auto;
   margin-right: auto;
   width: 500px;
   text-align: center;
 }
-/* line 17, ../src/css/style.sass */
+/* line 183, ../src/css/style.sass */
 .outer .middle .inner .button {
   background-color: black;
   color: white;
@@ -26,4 +278,56 @@
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
+}
+/* line 192, ../src/css/style.sass */
+.outer .middle .inner .fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+/* line 207, ../src/css/style.sass */
+#video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 219, ../src/css/style.sass */
+#insult {
+  font-family: impact;
+  font-size: 50px;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  animation: animationFrames linear 1s;
+  animation-iteration-count: infinite;
+  transform-origin: 100% 50%;
+  -webkit-animation: animationFrames linear 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 100% 50%;
+  -moz-animation: animationFrames linear 1s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 100% 50%;
+  -o-animation: animationFrames linear 1s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 100% 50%;
+  -ms-animation: animationFrames linear 1s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 100% 50%;
 }

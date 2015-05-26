@@ -20,9 +20,34 @@ WORD_GRID = [
   ['creepy','sphincter','balloon']
 ]
 
+addClass = (el, cls) ->
+  el.className = el.className + " #{cls}"
+
+removeClass = (el, cls) ->
+  el.className = el.className.replace cls, ''
+
+onVideoLoaded = ->
+  el = document.getElementById('loading')
+  addClass el, 'hidden'
+  removeClass document.getElementById('insultButton'), 'hidden'
+
+showVideo = ->
+  el = document.getElementById 'video'
+  removeClass el, 'invisible'
+  el.play()
+
 generatePhrase = ->
   words = []
   for i in [0..2]
     words[i] = WORD_GRID[Math.floor Math.random() * WORD_GRID.length][i]
 
   return "#{words[0]} #{words[1]} #{words[2]}"
+
+addDom = () ->
+  text = generatePhrase()
+  el = document.getElementById 'insult'
+  el.innerHTML = "<div class=\"fade-in\">#{text}</div>"
+  setTimeout showVideo, 1500
+
+document.getElementById('insultButton').addEventListener 'click', addDom
+document.getElementById('video').addEventListener 'loadeddata', onVideoLoaded
