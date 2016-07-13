@@ -43,4 +43,4 @@ addDom = function() {
 
 document.getElementById('insultButton').addEventListener('click', addDom);
 
-document.getElementById('video').onloadeddata = onVideoLoaded; //.addEventListener('loadeddata', onVideoLoaded);
+document.getElementById('video').onloadeddata = onVideoLoaded;
