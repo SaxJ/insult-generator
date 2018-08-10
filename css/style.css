@@ -249,6 +249,9 @@
 .invisible {
   opacity: 0;
 }
+.button {
+    cursor: pointer;
+}
 
 /* line 167, ../src/css/style.sass */
 .outer {
